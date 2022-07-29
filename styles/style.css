@@ -1,0 +1,411 @@
+:root {
+  --basic-color:#f2f2f2;
+  --basic-extra-dark:#1f1f1f;
+  --basic-dark:#000000;
+  
+  --special:#2f80ed;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--basic-color);
+  color: var(--basic-dark);
+  border: 1px solid gray;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  /* выше установили ограничения для секции */
+  background-color: #f2f2f2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.header__visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+.header__title {
+  width: 730px;
+  font-size: 102px;
+  line-height: 96px;
+  font-weight: bold;
+  z-index: 2;
+  margin: 0;
+  margin-left: 64px;
+  
+}
+
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}
+
+.header__subtitle {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+  width: 388px;
+  position: absolute;
+  z-index: 1;
+  bottom: 30px;
+  margin: 0;
+  margin-left: 64px;
+}
+
+.header__link {
+  text-decoration: none;
+  color: var(--special);
+}
+
+
+.header__main-illustration {
+  position: absolute;
+  background-size: cover;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+}
+
+
+/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.header__square-pic {
+  height: 568px;
+  width: 568px;
+  background-color: var(--special);
+  position: absolute;
+  top: 64px;
+  right: 0;
+  z-index: 0;
+}
+
+.rotation {
+  animation: rotation 20s linear infinite;
+}
+
+.description {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 100px;
+}
+
+.two-columns {
+  display: flex;
+  flex-direction: row;
+  padding: 100px 0;
+  margin:auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 80%;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.two-columns__left-column {
+  width: 175px;
+}
+
+.two-columns__left-column_brief {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: var(--special);
+  margin: 0;
+}
+
+.two-columns__right-column {
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__paragraph {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.two-columns__span-accent {
+  font-size: 24px;
+  line-height: 34px;
+  padding: 30px 0;
+}
+
+.digits {
+  margin: 0;
+  padding: 0;
+}
+
+.section-title {
+  font-size: 60px;
+  line-height: 69px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.table {
+  width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.table__cell {
+  width: 250px;
+  text-align: left;
+  margin-top: 60px;
+}
+
+.table__heading {
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.table__text {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+  text-align: left;
+}
+
+.feinman {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 90px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  height: 790px;
+  flex-direction: column;
+}
+
+.feinman__back-image {
+  position: absolute;
+  left:0;
+  bottom: 0;
+  background-size: cover;
+  z-index: 1;
+}
+
+.feinman__title {
+  font-size: 120px;
+  line-height: 1.15;
+  font-weight: bold;
+  width: 648px;
+  text-align: center;
+  z-index: 2;
+  margin: 0 auto;
+  top: 100px;
+}
+
+.feinman__subtitle {
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+  z-index: 2;
+  margin: auto;
+  height: 50%;
+}
+
+.feinman__link {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+  text-decoration: none;
+  color:  var(--basic-dark);
+  position: absolute;
+  z-index: 2;
+  right: 48px;
+  height: 50%;
+  margin: auto;
+  top: 50%;
+}
+
+.kaufman {
+  background-color: var(--basic-extra-dark);
+  color: var(--basic-color);
+  margin: 0;
+  padding: 0;
+  border: 1px solid white;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  position: relative;
+}
+
+.kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: cover;
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  right: -210px; 
+  top: 0;
+  z-index: 1;
+}
+
+.kaufman__section-title_theme_dark {
+  font-size: 60px;
+  line-height: 69px;
+  font-weight: bold;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 90px;
+  z-index: 2;
+}
+
+.kaufman__section-subtitle_theme_dark {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+  width: 60%;
+  text-align: center;
+  margin: 20px auto;
+  z-index: 2;
+}
+
+.table__heading_theme_dark {
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: bold;
+  padding-bottom: 20px;
+  z-index: 2;
+}
+
+.table__text_theme_dark {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+  z-index: 2;
+}
+
+/* и элемента с модификатором вида ключ-значение */
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  width:200px;
+  list-style: none;
+  z-index: 2;
+}
+
+.table__theme_dark {
+  padding-bottom: 90px;
+  background-color: var(--basic-extra-dark);
+  text-align: center;
+  text-align: left;
+}
+
+.footer {
+  background-color: var(--basic-extra-dark);
+  min-height: 350px;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  align-items: stretch;
+}
+
+.footer__columns {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  margin: auto;
+}
+
+.footer__author {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+}
+
+.footer__column-heading {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.footer__column-links {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__social-icon {
+  text-decoration: none;
+  color: white;
+  margin-right: auto;
+}
+
+.footer__columns_content_copyright{
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__columns_content_info {
+  padding-bottom: 16px;
+}
+
+.footer__columns_content_social {
+  padding-bottom: 16px;
+
+}
+
+@keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
