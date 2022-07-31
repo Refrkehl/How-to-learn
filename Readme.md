@@ -9,5 +9,5 @@
 
 [Ссылка для просмотра](https://refrkehl.github.io/How-to-learn/)
 
-Верстка - Ярослава Сладкая
+Верстка - Ярослава Сладкая\
 Дизайн - Desu Desu Desu
