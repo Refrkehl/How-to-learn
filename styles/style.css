@@ -311,7 +311,7 @@
   font-size: 24px;
   line-height: 1.15;
   font-weight: bold;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   z-index: 2;
 }
 
@@ -329,6 +329,7 @@
   width:200px;
   list-style: none;
   z-index: 2;
+  margin-bottom: 80px;
 }
 
 .table__theme_dark {
