@@ -21,11 +21,21 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
   background-color: var(--basic-color);
   color: var(--basic-dark);
-  border: 1px solid gray;
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
+  background-color: white;
+}
+
+.link {
+  transition: opacity 0.33s ease-out;
+  text-decoration: none;
+  
+}
+
+.link:hover {
+  opacity: 0.4;
 }
 
 .header {
@@ -33,11 +43,11 @@
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
-  background-color: #f2f2f2;
   position: relative;
   display: flex;
   align-items: center;
   overflow: hidden;
+  background-color: var(--basic-color);
 }
 
 .header__visually-hidden {
@@ -49,6 +59,7 @@
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+  background-color: var(--basic-color);
 }
 
 
@@ -115,6 +126,7 @@
   margin: 0;
   padding: 0;
   padding-bottom: 100px;
+  background-color: white;
 }
 
 .two-columns {
@@ -162,6 +174,7 @@
 .digits {
   margin: 0;
   padding: 0;
+  background-color: white;
 }
 
 .section-title {
@@ -212,6 +225,7 @@
 .feinman {
   margin: 0;
   padding: 0;
+  background-color: var(--basic-color);
   padding-bottom: 90px;
   position: relative;
   display: flex;
@@ -268,7 +282,6 @@
   color: var(--basic-color);
   margin: 0;
   padding: 0;
-  border: 1px solid white;
   display: flex;
   overflow: hidden;
   flex-direction: column;
