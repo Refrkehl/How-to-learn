@@ -182,6 +182,7 @@
   line-height: 69px;
   font-weight: bold;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .section-subtitle {
@@ -220,6 +221,81 @@
   line-height: 1.2;
   font-weight: normal;
   text-align: left;
+}
+
+.techniques {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.techniques__title {
+  line-height: 1.15;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.techniques__subtitle {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.cards {
+  margin: 0 auto;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.cards__item {
+  padding: 60px 100px;
+  width: 240px;
+  align-items: center;
+}
+
+.cards__title {
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: bold;
+}
+
+.cards__image {
+  margin: 60px 40px 43px;
+  align-items: center;
+}
+
+.cards__description {
+  text-align: center;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: normal;
+}
+
+.video__title {
+  width: 60%;
+  line-height: 1.15;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  padding-top: 100px;
+}
+
+.video__subtitle {
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.video__iframes {
+  margin: 0 auto;
+  
+}
+
+.video__iframe {
+  margin: 0 auto;
+}
+
+.oakley {
+  background-color: var(--basic-color);
 }
 
 .feinman {
