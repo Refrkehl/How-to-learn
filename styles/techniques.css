@@ -1,0 +1,51 @@
+.techniques {
+    width: 80%;
+    margin: 0 auto;
+}
+  
+.techniques__title {
+    line-height: 1.15;
+    width: 60%;
+    margin: 0 auto;
+}
+  
+.techniques__subtitle {
+    width: 60%;
+    margin: 0 auto;
+}
+  
+.cards {
+    width: 920px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 100px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+  
+.cards__item {
+    margin-top: 0px;
+    width: 240px;
+    align-items: center;
+}
+  
+.cards__title {
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.15;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+  
+.cards__image {
+    align-items: center;
+    margin: 60px 40px 43px 40px;
+}
+  
+.cards__description {
+    text-align: center;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: normal;
+}

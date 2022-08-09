@@ -1,0 +1,54 @@
+.feinman {
+    margin: 0;
+    padding: 0;
+    background-color: var(--basic-color);
+    padding-bottom: 90px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    height: 790px;
+    flex-direction: column;
+}
+  
+.feinman__back-image {
+    position: absolute;
+    left:0;
+    bottom: 0;
+    background-size: cover;
+    z-index: 1;
+}
+  
+.feinman__title {
+    font-size: 120px;
+    line-height: 1.15;
+    font-weight: bold;
+    width: 648px;
+    text-align: center;
+    z-index: 2;
+    margin: 0 auto;
+    top: 100px;
+}
+  
+.feinman__subtitle {
+    font-size: 36px;
+    line-height: 51px;
+    font-weight: normal;
+    z-index: 2;
+    margin: auto;
+    height: 50%;
+}
+  
+.feinman__link {
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 51px;
+    text-decoration: none;
+    color:  var(--basic-dark);
+    position: absolute;
+    z-index: 2;
+    right: 48px;
+    height: 50%;
+    margin: auto;
+    top: 50%;
+}
